@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style2.css">
+    
+    <title>SIng in</title>
+</head>
+<body>
+      <div class="login-container">
+          <div class="login-info-container">
+            <h1 class="title">sign in with</h1>
+            <div class="social-login">
+                <div class="social-login-element">
+                    <img src="images/google.svg" alt="google-image">
+                    <span>Google</span>
+                </div>
+                <div class="social-login-element">
+                    <img src="images/facebook.svg" alt="facebook-image">
+                    <span>Facebook</span>
+                </div>
+            </div>
+            <p>or</p>
+            <form class="inputs-container" method="post" action="php/registrar.php">
+                <input type="text" class="input2 left" placeholder="nombres" name="nombres">
+                <input type="text" class="input2 " placeholder="apellidos" name="apellidos"><br>
+                <div class="tipo_documento">
+                    <label class="left centrar" for="">Tipo de documento</label>
+                    <select name="tipo_documento" id="tipo_document"class="left centrar">
+                        <option value="CC">CC</option>
+                        <option value="CE">CE</option>
+                        <option value="TI">TI</option>
+                    </select>
+                    <input type="text" class="input2 left" placeholder="n° de documento" name="n_documento">
+                </div>
+
+                <input type="email" class="input" placeholder="correo" name="correo">
+                <input type="password" class="input2" placeholder="contraseña" name="contraseña">
+                <input type="password" class="input2" placeholder="contraseña" name="contraseña2">
+                <input type="text" class="input" placeholder="celular" name="celular">
+                <input type="text" class="input" placeholder="direccion" name="direccion"><br>
+                <div class="sexo">
+                    <label for="">Genero:     </label>
+                    <label for="m">Masculino</label> 
+                    <input id="m" type="radio" name="genero" value="M">
+                    <label for="f">Femenino</label>
+                    <input id="f"type="radio" name="genero" value="F"><br>
+                </div>
+                <div class="tipo_cuenta">
+                    <label for="">Tipo de cuenta</label>
+                <select name="t_user">
+                    <option value="1">Cliente</option>
+                    <option value="2">Comerciante</option>
+                    <option value="3">Domiciliario</option>
+                </select>
+                </div>
+
+
+                <input type="submit" class="btn">
+                <p>Have an account? <a href="index.html" class="span">login</a></p>
+            </form>
+            
+          </div>
+          
+      </div>
+
+</body>
+</html>
